@@ -1,4 +1,4 @@
-/* 
+/*
  * 	Core Owl Carousel CSS File
  *	v1.3.2
  */
@@ -38,7 +38,7 @@
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-	
+
 .owl-carousel .owl-item{
 	float: left;
 }
@@ -56,7 +56,7 @@
 }
 
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(grabbing.png) 8 8, move;
 }
 
@@ -80,46 +80,51 @@
 
 .owl-theme .owl-controls{
 	position:absolute;
-	left:50%;
-	top:-80px;
+	left: 80px;
+	top: 560px;
 	width:100%;
-	text-align: right;
-	transform:translateX(-50%);
-	-o-transform:translateX(-50%);
-	-ms-transform:translateX(-50%);
-	-webkit-transform:translateX(-50%);
+	text-align: left;
 }
 .testimonials .owl-theme .owl-controls{top:-50px;}
 
 .owl-theme .owl-controls .owl-buttons div {
 	position:relative;
-	z-index:1;
+	z-index: 99999;
 	display: inline-block;
-	width:70px;
-	height:70px;
-	margin:0 0 0 -2px;
-	border:2px solid #ccc;
-	transition: all 0.3s ease-in-out; 
+	width:67px;
+	height:67px;
+	margin:0 4px;
+	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
+	background-color: #0BDAE7;
+	border-radius: 50%;
+	color: #fff;
 }
-.owl-theme .owl-controls .owl-buttons div:hover {z-index:2; border-color:#333;}
+.owl-theme .owl-controls .owl-buttons div:hover {z-index:2;}
 .owl-theme .owl-controls .owl-buttons div:before {
 	position:absolute;
 	left:0;
 	top:0;
-	width:68px;
-	height:68px;
-	font-family: FontAwesome;
+	width:67px;
+	height:67px;
 	text-align:center;
-	line-height:66px;
-	font-size:32px;
-	color:#ccc;
-	transition: all 0.3s ease-in-out; 
+	color:#fff;
+	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
-.owl-theme .owl-controls .owl-buttons .owl-prev:before {content: "\f104";}
-.owl-theme .owl-controls .owl-buttons .owl-next:before {content: "\f105";}
-.owl-theme .owl-controls .owl-buttons div:hover:before {color:#333;}
+.owl-theme .owl-controls .owl-buttons .owl-prev:before {
+	content: "";
+	background-image: url("../images/prev.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next:before {
+	content: "";
+	background-image: url("../images/next.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.owl-theme .owl-controls .owl-buttons div:hover:before {opacity: .5}
 
 
 /* Styling Pagination*/

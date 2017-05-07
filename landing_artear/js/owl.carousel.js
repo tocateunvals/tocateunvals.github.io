@@ -1197,7 +1197,7 @@ if (typeof Object.create !== "function") {
                 iterations += 1;
                 if (base.completeImg($lazyImg.get(0)) || isBackgroundImg === true) {
                     showImage();
-                } else if (iterations <= 100) {//if image loads in less than 10 seconds 
+                } else if (iterations <= 100) {//if image loads in less than 10 seconds
                     window.setTimeout(checkLazyImage, 100);
                 } else {
                     showImage();
@@ -1226,7 +1226,7 @@ if (typeof Object.create !== "function") {
                 iterations += 1;
                 if (base.completeImg($currentimg.get(0))) {
                     addHeight();
-                } else if (iterations <= 100) { //if image loads in less than 10 seconds 
+                } else if (iterations <= 100) { //if image loads in less than 10 seconds
                     window.setTimeout(checkImage, 100);
                 } else {
                     base.wrapperOuter.css("height", ""); //Else remove height attribute
@@ -1451,21 +1451,21 @@ if (typeof Object.create !== "function") {
 
     $.fn.owlCarousel.options = {
 
-        items : 5,
+        items : 10,
         itemsCustom : false,
-        itemsDesktop : [1199, 4],
-        itemsDesktopSmall : [979, 3],
-        itemsTablet : [768, 2],
+        itemsDesktop : [1199, 1],
+        itemsDesktopSmall : [979, 1],
+        itemsTablet : [768, 1],
         itemsTabletSmall : false,
         itemsMobile : [479, 1],
-        singleItem : false,
+        singleItem : true,
         itemsScaleUp : false,
 
-        slideSpeed : 200,
-        paginationSpeed : 800,
+        slideSpeed : 50,
+        paginationSpeed : 400,
         rewindSpeed : 1000,
 
-        autoPlay : false,
+        autoPlay : true,
         stopOnHover : false,
 
         navigation : false,
