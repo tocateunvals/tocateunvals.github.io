@@ -2167,7 +2167,7 @@ input[type="color"]:focus {
 .planta .boeing_nota{
 	position: relative;
 	float: right;
-	margin-top: -160px;
+	margin-top: -400px;
 }
 
 .galeria {
@@ -2265,6 +2265,11 @@ input[type="color"]:focus {
 		margin-top: -324px;
     margin-left: 320px;
 	}
+
+	.planta .boeing_nota {
+		margin-top: -260px;
+	}
+
 	.pastilla_1,
 	.pastilla_2,
 	.pastilla_3 {
@@ -2372,13 +2377,12 @@ input[type="color"]:focus {
 	}
 
 	.planta .boeing_nota {
-		margin-top: 0;
+		margin-top: -100px;
 		float: right;
 	}
 
 	.planta .boeing_nota img {
 		height: 60px;
-		margin-top: -100px;
 	}
 
 	.planta_text {
