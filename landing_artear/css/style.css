@@ -1694,10 +1694,6 @@ input[type="color"]:focus {
 	.post_item_content a.title {font-size:19px; line-height:24px;}
 
 
-	.owl-theme .owl-controls {top:-69px;}
-	.owl-theme .owl-controls .owl-buttons div {width:50px; height:50px;}
-	.owl-theme .owl-controls .owl-buttons div:before {width:48px; height:48px; line-height:46px;}
-
 
 
 /* __________ Blog __________ */
@@ -1773,8 +1769,6 @@ input[type="color"]:focus {
 	.post_item_inf a {font-size:12px; padding-right:5px;}
 	.post_item_inf li {padding-right:5px;}
 
-
-	.owl-theme .owl-controls {top:340px;}
 
 
 	.crewman_item .crewman_social a {width:32px; height:32px; margin:0 2px 0 5px; font-size:17px; line-height:34px;}
@@ -2212,6 +2206,12 @@ input[type="color"]:focus {
 	font-weight: 900;
 }
 
+.hero_video_cont iframe,
+.tres_video iframe {
+	width: 100%;
+	max-height: 630px;
+}
+
 @media (max-width: 992px) {
 
 	.flexslider.top_slider{
@@ -2241,7 +2241,7 @@ input[type="color"]:focus {
 
 	.hero_video_cont iframe,
 	.tres_video iframe {
-		width: calc(100vw - 32px) !important;
+		width: 100%;
 		max-height: 440px;
 	}
 
@@ -2267,6 +2267,10 @@ input[type="color"]:focus {
 
 	.planta .boeing_nota {
 		margin-top: -260px;
+	}
+
+	.owl-theme .owl-controls {
+		top:92%;
 	}
 
 	.pastilla_1,
@@ -2350,7 +2354,7 @@ input[type="color"]:focus {
 		 padding-left: 80px;
 		 font-size: 24px !important;
 		 line-height: 24px;
-		 background-size: 16% auto;
+		 background-size: 60px auto;
 	 }
 
 	 .tres_video {
