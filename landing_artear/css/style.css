@@ -2037,8 +2037,6 @@ input[type="color"]:focus {
 	background-size: contain;
 }
 
-
-
 .flex-direction-nav {
 	display: none;
 }
@@ -2074,7 +2072,7 @@ input[type="color"]:focus {
 	position: relative;
 	margin: -100px auto 0;
 	width: calc(100vw - 160px);
-	height: 469px;
+	height: 630px;
 	box-shadow: 0 10px 20px rgba(0,0,0,.5);
 }
 
@@ -2135,7 +2133,7 @@ input[type="color"]:focus {
 	position: relative;
 	margin: -300px auto 0;
 	width: calc(100vw - 160px);
-	height: 469px;
+	height: 630px;
 	box-shadow: 0px 10px 20px rgba(0,0,0,.5);
 }
 
@@ -2234,6 +2232,7 @@ input[type="color"]:focus {
 	.hero_video,
 	.tres_video {
 		width: calc(100vw - 32px);
+		height: 440px;
 	}
 
 	.tres_video {
@@ -2243,7 +2242,7 @@ input[type="color"]:focus {
 	.hero_video_cont iframe,
 	.tres_video iframe {
 		width: calc(100vw - 32px) !important;
-		max-height: 300px;
+		max-height: 440px;
 	}
 
 	.infograph {
