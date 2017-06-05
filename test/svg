@@ -1,0 +1,34 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>test svg</title>
+    <style>
+      body {
+        background: #666;
+        padding: 0;
+        margin: 0;
+      }
+      .center {
+        width: 100vw;
+        height: 100vh;
+        min-height: 10em;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+      .svg_bg {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        background: url("img/big_player_pause.svg") no-repeat center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <img class="svg" src="img/big_player_pause.svg">
+      <div class="svg_bg">
+      </div>
+    </div>
+  </body>
+</html>

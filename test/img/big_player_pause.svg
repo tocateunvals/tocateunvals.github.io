@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>big_player_pause</title>
+
+    <style>
+
+      @keyframes pulse_animation {
+       0% { width:1px;height: 1px; opacity: 0.0}
+       10% { width:3px;height: 3px; opacity: .20}
+       20% { width:5px;height: 5px; opacity: .40 }
+       30% { width:7px;height: 7px; opacity: .60 }
+       40% { width:9px;height: 9px; opacity: .80 }
+       50% { width:11px;height: 11px; opacity: 1.0}
+       60% { width:13px;height: 13px; opacity: .80}
+       70% { width:15px;height: 15px;  opacity: .60}
+       80% { width:17px;height: 17px;  opacity: .40}
+       90% { width:19px;height: 19px;  opacity: .20}
+       100% { width:21px;height: 21px;  opacity: 0.0}
+      }
+
+      .pulse {
+      	animation-name: pulse_animation;
+      	animation-duration: 3000ms;
+      	transform-origin:70% 70%;
+      	animation-iteration-count: infinite;
+      	animation-timing-function: linear;
+      }
+
+    </style>
+
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="big_player_pause">
+            <circle id="halo" class="pulse" fill-opacity="0.3" fill="#FFFFFF" cx="65" cy="65" r="65"></circle>
+            <g transform="translate(10.000000, 10.000000)">
+                <circle id="player_bg" fill="#FFFFFF" cx="55" cy="55" r="55"></circle>
+                <g id="Group-2" transform="translate(43.000000, 41.000000)" fill="#1E82C8">
+                    <rect id="Rectangle" x="0" y="0" width="8" height="32" rx="4"></rect>
+                    <rect id="Rectangle-Copy" x="16" y="0" width="8" height="32" rx="4"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
