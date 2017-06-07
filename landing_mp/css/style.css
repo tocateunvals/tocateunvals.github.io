@@ -1,0 +1,153 @@
+/* Media Party 2017 - Styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+}
+.container {
+	padding: 0;
+	max-width: 100% !important;
+}
+.event {
+	width: 100%;
+	margin: 0;
+	border: 8px solid #00B8C3;
+}
+
+@media (max-width: 992px) {
+	.event__header {
+		padding-left: 30px;
+	}
+}
+
+.event__logo_text {
+	float: right;
+	width: 186px;
+	height: 172px;
+	text-indent: -9999px;
+	background: url("../images/mp_logo.svg") no-repeat center;
+}
+
+@media (max-width: 992px) {
+	.event__logo_text {
+		float: none;
+	}
+}
+
+.event__lang {
+	padding: 30px;
+	text-align: right;
+}
+
+.event__lang_link {
+	color: #000000 !important;
+}
+
+.event__cta {
+	display: inline-block;
+	padding: 10px 15px;
+	background:rgba(0,185,195,.2);
+	text-align: center;
+}
+
+.event__days {
+	font-size: 48px;
+	font-weight: bold;
+	letter-spacing: -3px;
+	line-height: 48px;
+	margin: 0;
+}
+
+.event__month {
+	font-size: 48px;
+	font-weight: normal;
+	letter-spacing: 3px;
+	line-height: 48px;
+	margin: 0;
+}
+
+.event__place {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.event__place {
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	line-height: 20px;
+	margin: 0;
+}
+
+.event__activities {
+	width: 100%;
+	min-height: 640px;
+	margin-top: 30px;
+	background: url(../images/foto_escalera.gif) no-repeat center;
+	background-size: cover;
+	color: #fff;
+}
+
+.event__act_list {
+	list-style-type: none;
+}
+
+.event__act_list li {
+	display: block;
+	float: left;
+	min-width: 220px;
+	padding: 30px 0 0;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+@media (max-width: 992px) {
+	.event__act_list li  {
+		text-align: left;
+	}
+}
+
+.event__act_list li:after {
+	content: "/";
+	padding-left: 30px;
+}
+
+.event__aside {
+	text-align: right;
+}
+
+.event__hhba {
+	text-align: left;
+	text-indent: -9999px;
+	width: 300px;
+	height: auto;
+	background: url(../images/logo_hhba_negro.svg) no-repeat center;
+	background-size: contain;
+}
+
+.event__description {
+	padding: 30px 0;
+}
+
+.event__desc_text {
+	font-size: 20px;
+	line-height: 30px;
+	color: #444;
+}
+
+.event__name {
+	color: #00B8C3;
+	font-weight: bold;
+}
+
+.event__footer {
+	padding: 30px 0;
+	clear: both;
+	text-align: center;
+}
