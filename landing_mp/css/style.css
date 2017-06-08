@@ -15,6 +15,10 @@ body {
 	border: 8px solid #00B8C3;
 }
 
+.event__header {
+	padding: 30px;
+}
+
 @media (max-width: 992px) {
 	.event__header {
 		padding-left: 30px;
@@ -35,8 +39,23 @@ body {
 	}
 }
 
+.event__nav {
+	text-align: right;
+}
+
+.event__blog {
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.event__blog:visited {
+	color: #333;
+	text-decoration: none;
+}
+
 .event__lang {
-	padding: 30px;
+	padding-top: 5px;
 	text-align: right;
 }
 
@@ -91,20 +110,23 @@ body {
 	background: url(../images/foto_escalera.gif) no-repeat center;
 	background-size: cover;
 	color: #fff;
+	text-align: center;
 }
 
 .event__act_list {
 	list-style-type: none;
+	margin: auto;
+	display: block;
+	width: 90%;
 }
 
 .event__act_list li {
 	display: block;
 	float: left;
-	min-width: 220px;
 	padding: 30px 0 0;
 	font-size: 24px;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
 }
 
 @media (max-width: 992px) {
@@ -115,7 +137,17 @@ body {
 
 .event__act_list li:after {
 	content: "/";
-	padding-left: 30px;
+	padding: 0 15px;
+}
+
+.event__act_list li:last-child::after {
+	display:none;
+}
+
+@media (max-width: 992px) {
+	.event__act_list li:last-child::after  {
+		display: inline-block;
+	}
 }
 
 .event__aside {
@@ -123,16 +155,32 @@ body {
 }
 
 .event__hhba {
+	float: right;
 	text-align: left;
 	text-indent: -9999px;
 	width: 300px;
 	height: auto;
-	background: url(../images/logo_hhba_negro.svg) no-repeat center;
+	margin-bottom: 30px;
+	background: url("../images/logo_hhba_negro.svg") no-repeat right center;
 	background-size: contain;
 }
 
+@media (max-width: 992px) {
+	.event__hhba {
+		float: none;
+		background: url("../images/logo_hhba_negro.svg") no-repeat left center;
+	}
+}
 .event__description {
 	padding: 30px 0;
+}
+
+@media (max-width: 992px) {
+	.event__video  {
+		width: 100%;
+		height: auto;
+		min-height: 240px;
+	}
 }
 
 .event__desc_text {
@@ -150,4 +198,27 @@ body {
 	padding: 30px 0;
 	clear: both;
 	text-align: center;
+}
+
+@media (max-width: 992px) {
+	.event__footer  {
+		padding: 30px;
+		text-align: center;
+	}
+}
+
+.event__contact {
+	padding: 10px 15px;
+	max-width: 640px;
+	background:rgba(0,185,195,.2);
+	text-align: center;
+}
+.event__contact_link {
+	color: #000;
+	text-decoration: underline;
+}
+.event__copyright {
+	font-size: 10px;
+	text-align: center;
+	max-width: 640px;
 }
