@@ -220,11 +220,10 @@ body {
 
 .event__contact {
 	padding: 10px 15px;
-	max-width: 640px;
 	background:rgba(0,185,195,.2);
 	text-align: center;
-	margin: 0 auto 30px;
 }
+
 .event__contact_link {
 	color: #000;
 	text-decoration: underline;
@@ -232,6 +231,5 @@ body {
 .event__copyright {
 	font-size: 10px;
 	text-align: center;
-	max-width: 640px;
 	margin: auto;
 }
