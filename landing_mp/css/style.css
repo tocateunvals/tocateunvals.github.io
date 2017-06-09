@@ -222,8 +222,8 @@ body {
 	padding: 10px 15px;
 	background:rgba(0,185,195,.2);
 	text-align: center;
+	margin: 0 4% 30px;
 }
-
 .event__contact_link {
 	color: #000;
 	text-decoration: underline;
