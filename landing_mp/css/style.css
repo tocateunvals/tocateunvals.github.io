@@ -205,6 +205,14 @@ body {
 	font-weight: bold;
 }
 
+.event__quote {
+	margin-top: 30px;
+}
+
+.event__quote small {
+	text-align: right;
+}
+
 .event__sched_title {
 	font-family: 'Roboto Mono', monospace;
 	border-top: 4px solid #EEE;
