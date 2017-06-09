@@ -207,10 +207,10 @@ body {
 
 .event__sched_title {
 	font-family: 'Roboto Mono', monospace;
-	border-top: 4px solid #CCC;
+	border-top: 4px solid #EEE;
 	padding: 30px 0 0;
-	font-size: 24px;
-	font-weight: 700;
+	font-size: 20px;
+	font-weight: 400;
 	color: #FF5D5D;
 	text-transform: uppercase;
 	letter-spacing: 2px;
