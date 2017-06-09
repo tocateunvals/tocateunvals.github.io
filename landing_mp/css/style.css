@@ -205,6 +205,16 @@ body {
 	font-weight: bold;
 }
 
+.event__sched_title {
+	padding: 0;
+	font-size: 24px;
+	font-weight: 700;
+	color: #FF5D5D;
+	background-color: #fff !important;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
 .event__footer {
 	padding: 30px 0;
 	clear: both;
