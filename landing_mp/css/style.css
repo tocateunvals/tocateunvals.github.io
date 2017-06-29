@@ -5,9 +5,86 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto Mono', monospace;
+	text-align: center;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+	height: 40px;
+	width: 80%;
+	margin: 40px auto;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+
+h2:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	margin: -20px;
+	background: #eee;
+}
+
+.event__quote_img,
+.event__speaker_img,
+.event__collaborators_img,
+.event__partners_img,
+.event__sponsors_img,
+.event__recruiters_img,
+.event__team_img  {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+	margin-bottom: 16px;
+}
+
+.event__sponsors_img,
+.event__partners_img {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+.event__quote_img {
+	display: block;
+	width: 48px;
+	height: 48px;
+}
+
+.event__speakers_full .event__speaker_img,
+.event__team_img {
+	border: 6px solid #fff;
+	box-shadow: 3px -1px 0px #000;
+}
+
+.event__speakers_featured .event__speaker_img {
+	width: 30%;
+	display: block;
+	border-radius: 0;
+}
+
+.event__speakers_featured .event__speaker_even .event__speaker_img{
+	float: right;
+}
+
+.event__speakers_featured .event__speaker_uneven .event__speaker_img {
+	float: left;
+}
+
+.event__speakers_featured .event__speaker {
+	clear: both;
+	overflow: hidden;
+}
+
+.event__speaker_name {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 20px;
 }
 
 .container {
@@ -17,7 +94,6 @@ h1, h2, h3, h4, h5, h6 {
 .event {
 	width: 100%;
 	margin: 0;
-	border: 8px solid #00B8C3;
 }
 
 .event__header {
@@ -66,11 +142,9 @@ h1, h2, h3, h4, h5, h6 {
 	color: #000000 !important;
 }
 
-.event__cta {
-	display: inline-block;
-	padding: 10px 15px;
-	background:rgba(0,185,195,.2);
-	text-align: center;
+.event__hero {
+	height: 70vh;
+	background: url("../images/hero_bg.svg") no-repeat center bottom;
 }
 
 .event__days {
@@ -123,6 +197,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .event__aside {
 	text-align: right;
+	height: 100%;
+	background: url("../images/foto_escalera.jpg") no-repeat center;
+	background-size: cover;
 }
 
 .event__hhba {
@@ -132,19 +209,35 @@ h1, h2, h3, h4, h5, h6 {
 	width: 300px;
 	height: auto;
 	margin: 10px 0 30px;
-	background: url("../images/logo_hhba_negro.svg") no-repeat right center;
+	background: url("../images/logo_hhba_blanco.svg") no-repeat right center;
 	background-size: contain;
 }
 
 @media (max-width: 992px) {
 	.event__hhba {
 		float: none;
-		background: url("../images/logo_hhba_negro.svg") no-repeat left center;
+		background: url("../images/logo_hhba_blanco.svg") no-repeat left center;
 	}
 }
+
+.event__actions {
+	height: 80px;
+	margin-bottom: 40px;
+}
+
+.event__meet_up_links {
+	background: #000;
+	color: #fff;
+}
+
+.event__forms_links {
+	background: #FFDA40;
+}
+
 .event__description {
 	font-weight: 300;
-	padding: 30px 16px;
+	padding: 0;
+	background: #FF5E5E;
 }
 
 @media (max-width: 992px) {
@@ -162,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .event__name {
-	color: #00B8C3;
+	color: #fff;
 	font-weight: bold;
 }
 
@@ -174,15 +267,11 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: right;
 }
 
-.event__sched_title {
-	font-family: 'Roboto Mono', monospace;
-	border-top: 4px solid #EEE;
-	padding: 30px 0 0;
-	font-size: 20px;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	text-align: center;
+.event__venue_info {
+	height: 400px;
+	background: url("../images/konex.png") no-repeat center;
+	background-size: cover;
+	color: #fff;
 }
 
 .event__footer {
@@ -191,18 +280,12 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-
-.event__contact {
-	padding: 10px 15px;
-	background:rgba(0,185,195,.2);
-	text-align: center;
-	margin: 0 4% 30px;
+.event__footer_cta {
+	background: #eee;
+	padding: 40px;
+	margin: 40px 0;
 }
 
-.event__contact_link {
-	color: #000;
-	text-decoration: underline;
-}
 .event__copyright {
 	font-size: 10px;
 	text-align: center;
