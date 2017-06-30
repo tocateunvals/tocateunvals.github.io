@@ -81,6 +81,7 @@ a {
 @media (max-width: 992px) {
 	.event__header {
 		padding-left: 16px;
+		padding-bottom: 0;
 	}
 	.event__logo_text {
 		margin-top: 0;
@@ -105,10 +106,11 @@ a {
 @media (max-width: 992px) {
 	.event__nav {
 		text-align: left;
+		margin-bottom: 16px;
 	}
 	.event__menu_item {
 		display: block;
-		padding: 8px;
+		padding: 4px 0;
 	}
 }
 
@@ -120,6 +122,7 @@ a {
 .event__lang {
 	padding-top: 5px;
 	text-align: right;
+	float: right;
 }
 
 .event__lang_link {
@@ -130,23 +133,33 @@ a {
 }
 
 .event__en .event__hero {
-	height: 60vh;
+	height: 520px;
 	background: url("../images/hero_en.svg") no-repeat center bottom;
 	background-size: contain;
-	margin-bottom: 24px;
+	margin-bottom: 16px;
 }
 
 .event__es .event__hero {
-	height: 60vh;
+	height:520px;
 	background: url("../images/hero_es.svg") no-repeat center bottom;
 	background-size: contain;
-	margin-bottom: 24px;
+	margin-bottom: 16px;
 }
 
 @media (max-width: 992px) {
-	.event__en .event__hero,
+	.event__lang {
+		width: 40px;
+		height: 40px;
+		float: right;
+		margin-right: 8px;
+	}
+	.event__en .event__hero {
+		height: 421px;
+		background: url("../images/hero_en_mob.svg") no-repeat center bottom;
+	}
 	.event__es .event__hero {
-		height: 200px;
+		height: 421px;
+		background: url("../images/hero_es_mob.svg") no-repeat center bottom;
 	}
 }
 
@@ -244,6 +257,16 @@ a {
 	color: #000;
 }
 
+@media (max-width: 992px) {
+	.event__meet_up,
+	.event__forms  {
+		font-size: 14px;
+	}
+	.event__forms  {
+		margin-top: 16px;
+	}
+}
+
 .event__description {
 	text-align: left;
 	font-weight: 300;
@@ -334,10 +357,31 @@ a {
 	height: 48px;
 }
 
-.event__timeline_img {
+.event__en .event__timeline,
+.event__es .event__timeline {
 	width: 80%;
-	height: auto;
+	height: 366px;
 	margin: auto;
+	background-size: contain;
+}
+.event__en .event__timeline {
+	background: url("../images/timeline_en.png") no-repeat center;
+}
+
+.event__es .event__timeline {
+	background: url("../images/timeline_es.png") no-repeat center;
+}
+
+@media (max-width: 992px) {
+	.event__en .event__timeline {
+		height: 565px;
+		background: url("../images/timeline_en_mob.png") no-repeat center;
+	}
+
+	.event__es .event__timeline {
+		height: 565px;
+		background: url("../images/timeline_es_mob.png") no-repeat center;
+	}
 }
 
 .event__sponsors_img,
